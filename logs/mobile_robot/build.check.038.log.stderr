@@ -1,0 +1,5 @@
+[31m[1mCMake Error[0m at /home/sebastian/ros_ws/src/mobile_robot/CMakeLists.txt:126:
+  Parse error.  Function missing ending ")".  End of file reached.
+
+
+make: *** [Makefile:854: cmake_check_build_system] Error 1

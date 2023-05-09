@@ -1,0 +1,21 @@
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:[m[K In member function ‘[01m[Kbool OdomCalc::init()[m[K’:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:22:55:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid OdomCalc::Calc_Right(const Int16&)[m[K’
+   22 |   right_counts_sub = nh.subscribe("right_ticks", 100, [01;31m[KCalc_Right[m[K, ros::TransportHints().tcpNoDelay());
+      |                                                       [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:1[m[K:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/include/localization_data_pub/odom_pub.h:36:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   36 |         void [01;36m[KCalc_Right[m[K(const std_msgs::Int16 &leftCount);
+      |              [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:23:53:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid OdomCalc::Calc_Left(const Int16&)[m[K’
+   23 |   left_counts_sub = nh.subscribe("left_ticks", 100, [01;31m[KCalc_Left[m[K, ros::TransportHints().tcpNoDelay());
+      |                                                     [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:1[m[K:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/include/localization_data_pub/odom_pub.h:35:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   35 |         void [01;36m[KCalc_Left[m[K(const std_msgs::Int16 &leftCount);
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:24:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+   24 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/localization_data_pub.dir/build.make:63: CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/localization_data_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

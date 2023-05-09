@@ -1,0 +1,7 @@
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kmobilerobot_drive.h: No such file or directory
+    1 | #include [01;31m[K"mobilerobot_drive.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/mobile_robot.dir/build.make:63: CMakeFiles/mobile_robot.dir/src/mobilerobot_drive.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/mobile_robot.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,19 @@
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:[m[K In member function ‘[01m[Kvoid MobileRobot::updatecommandVelocity(double, double)[m[K’:
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:35:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcmd_vel_pub[m[K’?
+   35 |   [01;31m[Kcmd_vel_pub_[m[K.publish(cmd_vel);
+      |   [01;31m[K^~~~~~~~~~~~[m[K
+      |   [32m[Kcmd_vel_pub[m[K
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:[m[K At global scope:
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:58:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid MobileRobot::controlLoop()[m[K’
+   58 | void [01;31m[KMobileRobot[m[K::controlLoop(){
+      |      [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:1[m[K:
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/include/mobile_robot/mobilerobot_drive.h:20:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kbool MobileRobot::controlLoop()[m[K’
+   20 |     bool [01;36m[KcontrolLoop[m[K();
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/include/mobile_robot/mobilerobot_drive.h:15:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass MobileRobot[m[K’ defined here
+   15 | class [01;36m[KMobileRobot[m[K{
+      |       [01;36m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/mobile_robot.dir/build.make:63: CMakeFiles/mobile_robot.dir/src/mobilerobot_drive.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:209: CMakeFiles/mobile_robot.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

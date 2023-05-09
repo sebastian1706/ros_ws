@@ -1,0 +1,8 @@
+prefix=/home/sebastian/ros_ws/devel/.private/localization_data_pub
+
+Name: localization_data_pub
+Description: Description of localization_data_pub
+Version: 0.0.0
+Cflags: -I/home/sebastian/ros_ws/src/localization_data_pub/include
+Libs: -L${prefix}/lib -llocalization_data_pub
+Requires: cmath geometry_msgs nav_msgs roscpp std_msgs
