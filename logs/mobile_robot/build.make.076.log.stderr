@@ -1,0 +1,19 @@
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:[m[K In member function ‘[01m[Kvoid MobileRobot::rangeMsgcallBack(std_msgs::Float32MultiArray&)[m[K’:
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:39:20:[m[K [01;31m[Kerror: [m[Kincompatible types in assignment of ‘[01m[Kstd_msgs::Float32MultiArray_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} to ‘[01m[Kfloat [3][m[K’
+   39 |   range_data = msg.[01;31m[Kdata[m[K
+      |                    [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/subscription_callback_helper.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/subscriber.h:33[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:33[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/sebastian/ros_ws/src/mobile_robot/include/mobile_robot/mobilerobot_drive.h:4[m[K,
+                 from [01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:1[m[K:
+/opt/ros/noetic/include/ros/parameter_adapter.h: In instantiation of ‘[01m[Kstatic ros::ParameterAdapter<M>::Parameter ros::ParameterAdapter<M>::getParameter(const Event&) [with M = std_msgs::Float32MultiArray_<std::allocator<void> >&; ros::ParameterAdapter<M>::Parameter = std_msgs::Float32MultiArray_<std::allocator<void> >&; ros::ParameterAdapter<M>::Event = ros::MessageEvent<const std_msgs::Float32MultiArray_<std::allocator<void> > >; typename boost::remove_reference<typename boost::remove_const<M>::type>::type = std_msgs::Float32MultiArray_<std::allocator<void> >][m[K’:
+[01m[K/opt/ros/noetic/include/ros/subscription_callback_helper.h:144:48:[m[K   required from ‘[01m[Kvoid ros::SubscriptionCallbackHelperT<P, Enabled>::call(ros::SubscriptionCallbackHelperCallParams&) [with P = std_msgs::Float32MultiArray_<std::allocator<void> >&; Enabled = void][m[K’
+[01m[K/opt/ros/noetic/include/ros/subscription_callback_helper.h:141:16:[m[K   required from here
+[01m[K/opt/ros/noetic/include/ros/parameter_adapter.h:78:30:[m[K [01;31m[Kerror: [m[Kbinding reference of type ‘[01m[Kros::ParameterAdapter<std_msgs::Float32MultiArray_<std::allocator<void> >&>::Parameter[m[K’ {aka ‘[01m[Kstd_msgs::Float32MultiArray_<std::allocator<void> >&[m[K’} to ‘[01m[Kconst std_msgs::Float32MultiArray_<std::allocator<void> >[m[K’ discards qualifiers
+   78 |     return *event.getMessage([01;31m[K)[m[K;
+      |                              [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/mobile_robot.dir/build.make:63: CMakeFiles/mobile_robot.dir/src/mobilerobot_drive.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:209: CMakeFiles/mobile_robot.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

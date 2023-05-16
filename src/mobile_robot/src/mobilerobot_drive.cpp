@@ -22,7 +22,7 @@ bool MobileRobot::init(){
   range_sub = nh.subscribe("/ultrasonic", 10, &MobileRobot::rangeMsgcallBack, this);
   infra_sub = nh.subscribe("/infra", 10, &MobileRobot::infraMsgcallBack, this);
   
-  scanData =0;
+  
   brightness = 0;
   
   return true;
@@ -35,8 +35,10 @@ void MobileRobot::updatecommandVelocity(double linear, double angular)
   cmd_vel_pub.publish(cmd_vel);
 }
 
-void MobileRobot::rangeMsgcallBack(const sensor_msgs::Range &msg){
-  scanData = msg.range;
+void MobileRobot::rangeMsgcallBack(const std_msgs::Float32MultiArray &msg){
+  range_data[0] = msg.data[0];
+  range_data[1] = msg.data[1];
+  range_data[2] = msg.data[2];
 }
 
 void MobileRobot::infraMsgcallBack(const sensor_msgs::Range &msg){

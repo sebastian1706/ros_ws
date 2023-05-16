@@ -14,6 +14,7 @@ class OdomCalc{
         OdomCalc();
         ~OdomCalc();
         bool init();
+        void update_odom();
     
     private:
         ros::NodeHandle nh;
@@ -34,7 +35,7 @@ class OdomCalc{
         //Initialize functions
         void Calc_Left(const std_msgs::Int16 &leftCount);
         void Calc_Right(const std_msgs::Int16 &leftCount);
-        void update_odom();
+        
 
 };
 

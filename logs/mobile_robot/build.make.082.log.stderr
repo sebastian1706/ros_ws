@@ -1,0 +1,7 @@
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:[m[K In member function ‘[01m[Kvoid MobileRobot::rangeMsgcallBack(const Float32MultiArray&)[m[K’:
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:39:25:[m[K [01;31m[Kerror: [m[Kincompatible types in assignment of ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kfloat [3][m[K’
+   39 |   range_data = msg.data.[01;31m[Kdata[m[K;
+      |                         [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/mobile_robot.dir/build.make:63: CMakeFiles/mobile_robot.dir/src/mobilerobot_drive.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:209: CMakeFiles/mobile_robot.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

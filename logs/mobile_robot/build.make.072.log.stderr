@@ -1,0 +1,18 @@
+In file included from [01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:1[m[K:
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/include/mobile_robot/mobilerobot_drive.h:23:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kprvate[m[K’ does not name a type
+   23 |  [01;31m[Kprvate[m[K:
+      |  [01;31m[K^~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:[m[K In member function ‘[01m[Kbool MobileRobot::init()[m[K’:
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:18:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knh[m[K’ was not declared in this scope
+   18 |   cmd_vel_pub = [01;31m[Knh[m[K.advertise<geometry_msgs::Twist>("cmd_vel", 1);
+      |                 [01;31m[K^~[m[K
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:18:50:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   18 |   cmd_vel_pub = nh.advertise<geometry_msgs::Twist[01;31m[K>[m[K("cmd_vel", 1);
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:[m[K In member function ‘[01m[Kvoid MobileRobot::rangeMsgcallBack(const Float32MultiArray&)[m[K’:
+[01m[K/home/sebastian/ros_ws/src/mobile_robot/src/mobilerobot_drive.cpp:39:20:[m[K [01;31m[Kerror: [m[Kincompatible types in assignment of ‘[01m[Kconst _data_type[m[K’ {aka ‘[01m[Kconst std::vector<float>[m[K’} to ‘[01m[Kfloat [3][m[K’
+   39 |   range_data = msg.[01;31m[Kdata[m[K
+      |                    [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/mobile_robot.dir/build.make:63: CMakeFiles/mobile_robot.dir/src/mobilerobot_drive.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:209: CMakeFiles/mobile_robot.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

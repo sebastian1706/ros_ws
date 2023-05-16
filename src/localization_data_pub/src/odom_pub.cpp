@@ -4,7 +4,7 @@
 OdomCalc::OdomCalc()
   : nh_priv_("~"){
   //Init ros odom_pub node
-  ROS_INFO("Turtlebot initialisiert");
+  ROS_INFO("odom_pub initialisiert");
   ROS_ASSERT(init());
 }
 
@@ -15,6 +15,9 @@ OdomCalc::~OdomCalc(){
 bool OdomCalc::init(){
   distanceLeft = 0;
   distanceRight = 0;
+  odomOld.pose.pose.position.x = 0;
+  odomOld.pose.pose.position.y = 0;
+  odomOld.pose.pose.orientation.z = 0;
   //Initialize Publisher
   odom_data_pub = nh.advertise<nav_msgs::Odometry>("/odom_euler", 100);
 
@@ -122,7 +125,20 @@ void OdomCalc::update_odom() {
 
 int main(int argc, char* argv[])
 {
+  ros::init(argc, argv, "odom_pub");
+  OdomCalc odomCalc;
+
+  ros::Rate loop_rate(30); 
+     
+  while(ros::ok()) {
+     
   
+    odomCalc.update_odom();
+      
+    
+    ros::spinOnce();
+    loop_rate.sleep();
+  }
   return 0;
 }
  
