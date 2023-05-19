@@ -1,0 +1,14 @@
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:[m[K In member function ‘[01m[Kbool OdomCalc::init()[m[K’:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:44:20:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+   44 |   subInitialPose = [01;31m[Knode[m[K.subscribe("initial_2d", 1, &OdomCalc::set_initial_2d);
+      |                    [01;31m[K^~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:[m[K In function ‘[01m[Kvoid publish_quat()[m[K’:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:101:18:[m[K [01;31m[Kerror: [m[K‘[01m[KodomNew[m[K’ was not declared in this scope
+  101 |   q.setRPY(0, 0, [01;31m[KodomNew[m[K.pose.pose.orientation.z);
+      |                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:133:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_data_pub_quat[m[K’ was not declared in this scope
+  133 |   [01;31m[Kodom_data_pub_quat[m[K.publish(quatOdom);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/localization_data_pub.dir/build.make:63: CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1726: CMakeFiles/localization_data_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

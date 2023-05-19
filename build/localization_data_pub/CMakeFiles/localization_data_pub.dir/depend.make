@@ -5,8 +5,11 @@ CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /home/sebastian/ros_ws/
 CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp
 CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/geometry_msgs/Point.h
 CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/geometry_msgs/Pose.h
+CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/geometry_msgs/PoseStamped.h
 CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/geometry_msgs/PoseWithCovariance.h
 CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/geometry_msgs/Quaternion.h
+CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/geometry_msgs/Transform.h
+CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/geometry_msgs/TransformStamped.h
 CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/geometry_msgs/Twist.h
 CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/geometry_msgs/TwistWithCovariance.h
 CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/geometry_msgs/Vector3.h
@@ -69,6 +72,12 @@ CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include
 CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/rosconsole/macros_generated.h
 CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/std_msgs/Header.h
 CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/std_msgs/Int16.h
+CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/tf2/LinearMath/MinMax.h
+CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/tf2/LinearMath/QuadWord.h
+CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/tf2/LinearMath/Quaternion.h
+CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/tf2/LinearMath/Scalar.h
+CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/tf2/LinearMath/Vector3.h
+CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/tf2_ros/transform_broadcaster.h
 CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 

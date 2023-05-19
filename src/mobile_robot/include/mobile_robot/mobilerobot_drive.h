@@ -16,6 +16,13 @@
 #define LEFT 1
 #define FRONT 2
 
+#define GET_MR_DIRECTION 0
+#define MR_DRIVE_FORWARD 1
+#define MR_RIGHT_TURN    2
+#define MR_LEFT_TURN     3
+#define MR_DRIVE_STOP    4
+#define MR_END           5
+
 
 
 class MobileRobot{

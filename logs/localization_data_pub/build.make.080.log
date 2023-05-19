@@ -1,0 +1,60 @@
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_py
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target actionlib_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target tf_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target tf_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target tf_generate_messages_py
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target tf_generate_messages_lisp
+[  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_lisp
+[  0%] Built target actionlib_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target localization_data_pub[0m
+[ 50%] Built target rviz_click_to_2d
+[ 75%] [32mBuilding CXX object CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o[0m
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:[m[K In member function ‘[01m[Kvoid OdomCalc::set_initial_2d(const PoseStamped&)[m[K’:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:50:3:[m[K [01;31m[Kerror: [m[K‘[01m[KinitialPoseRecieved[m[K’ was not declared in this scope
+   50 |   [01;31m[KinitialPoseRecieved[m[K = true;
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/localization_data_pub.dir/build.make:63: CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1726: CMakeFiles/localization_data_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

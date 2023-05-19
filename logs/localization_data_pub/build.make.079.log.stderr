@@ -1,0 +1,20 @@
+In file included from [01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:1[m[K:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/include/localization_data_pub/odom_pub.h:30:50:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseStamped[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+   30 |         void set_initial_2d(const geometry_msgs::[01;31m[KPoseStamped[m[K &rvizClick);
+      |                                                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:45:52:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseStamped[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+   45 | void OdomCalc::set_initial_2d(const geometry_msgs::[01;31m[KPoseStamped[m[K &rvizClick) {
+      |                                                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:[m[K In member function ‘[01m[Kvoid OdomCalc::set_initial_2d(const int&)[m[K’:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:47:44:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpose[m[K’ in ‘[01m[KrvizClick[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   47 |   odomOld.pose.pose.position.x = rvizClick.[01;31m[Kpose[m[K.position.x;
+      |                                            [01;31m[K^~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:48:44:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpose[m[K’ in ‘[01m[KrvizClick[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   48 |   odomOld.pose.pose.position.y = rvizClick.[01;31m[Kpose[m[K.position.y;
+      |                                            [01;31m[K^~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:49:47:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpose[m[K’ in ‘[01m[KrvizClick[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   49 |   odomOld.pose.pose.orientation.z = rvizClick.[01;31m[Kpose[m[K.orientation.z;
+      |                                               [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/localization_data_pub.dir/build.make:63: CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1726: CMakeFiles/localization_data_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

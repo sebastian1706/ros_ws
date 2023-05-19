@@ -12,6 +12,8 @@ find_package(catkin REQUIRED COMPONENTS
   nav_msgs
   roscpp
   std_msgs
+  tf
+  tf2
 )
 
 ## System dependencies are found with CMake's conventions
@@ -125,6 +127,13 @@ add_executable (localization_data_pub src/odom_pub.cpp)
 add_dependencies (localization_data_pub ${${PROJECT_NAME}_EXPORTED_TARGETS}
 ${catkin_EXPORTED_TARGETS} ) 
 target_link_libraries(localization_data_pub ${catkin_LIBRARIES})
+
+
+ 
+add_executable(rviz_click_to_2d src/rviz_click_to_2d.cpp)
+add_dependencies (rviz_click_to_2d ${${PROJECT_NAME}_EXPORTED_TARGETS}
+${catkin_EXPORTED_TARGETS} ) 
+target_link_libraries(rviz_click_to_2d ${catkin_LIBRARIES})
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}

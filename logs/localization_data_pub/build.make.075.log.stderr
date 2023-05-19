@@ -1,0 +1,60 @@
+In file included from [01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:1[m[K:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/include/localization_data_pub/odom_pub.h:28:50:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseStamped[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+   28 |         void set_initial_2d(const geometry_msgs::[01;31m[KPoseStamped[m[K &rvizClick);
+      |                                                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:[m[K In constructor ‘[01m[KOdomCalc::OdomCalc()[m[K’:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:4:1:[m[K [01;31m[Kerror: [m[Kuninitialized const member in ‘[01m[Kconst double[m[K’ [[01;31m[K-fpermissive[m[K]
+    4 | [01;31m[KOdomCalc[m[K::OdomCalc()
+      | [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:1[m[K:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/include/localization_data_pub/odom_pub.h:25:22:[m[K [01;36m[Knote: [m[K‘[01m[Kconst double OdomCalc::initialX[m[K’ should be initialized
+   25 |         const double [01;36m[KinitialX[m[K;
+      |                      [01;36m[K^~~~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:4:1:[m[K [01;31m[Kerror: [m[Kuninitialized const member in ‘[01m[Kconst double[m[K’ [[01;31m[K-fpermissive[m[K]
+    4 | [01;31m[KOdomCalc[m[K::OdomCalc()
+      | [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:1[m[K:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/include/localization_data_pub/odom_pub.h:26:22:[m[K [01;36m[Knote: [m[K‘[01m[Kconst double OdomCalc::initialY[m[K’ should be initialized
+   26 |         const double [01;36m[KinitialY[m[K;
+      |                      [01;36m[K^~~~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:4:1:[m[K [01;31m[Kerror: [m[Kuninitialized const member in ‘[01m[Kconst double[m[K’ [[01;31m[K-fpermissive[m[K]
+    4 | [01;31m[KOdomCalc[m[K::OdomCalc()
+      | [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:1[m[K:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/include/localization_data_pub/odom_pub.h:27:22:[m[K [01;36m[Knote: [m[K‘[01m[Kconst double OdomCalc::initialTheta[m[K’ should be initialized
+   27 |         const double [01;36m[KinitialTheta[m[K;
+      |                      [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:[m[K In member function ‘[01m[Kbool OdomCalc::init()[m[K’:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:18:12:[m[K [01;31m[Kerror: [m[Kassignment of read-only member ‘[01m[KOdomCalc::initialX[m[K’
+   18 |   [01;31m[KinitialX = 0.0[m[K;
+      |   [01;31m[K~~~~~~~~~^~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:19:12:[m[K [01;31m[Kerror: [m[Kassignment of read-only member ‘[01m[KOdomCalc::initialY[m[K’
+   19 |   [01;31m[KinitialY = 0.0[m[K;
+      |   [01;31m[K~~~~~~~~~^~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:20:16:[m[K [01;31m[Kerror: [m[Kassignment of read-only member ‘[01m[KOdomCalc::initialTheta[m[K’
+   20 |   [01;31m[KinitialTheta = 0.00000000001[m[K;
+      |   [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:[m[K At global scope:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:44:52:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseStamped[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+   44 | void OdomCalc::set_initial_2d(const geometry_msgs::[01;31m[KPoseStamped[m[K &rvizClick) {
+      |                                                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:[m[K In member function ‘[01m[Kvoid OdomCalc::set_initial_2d(const int&)[m[K’:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:46:44:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpose[m[K’ in ‘[01m[KrvizClick[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   46 |   odomOld.pose.pose.position.x = rvizClick.[01;31m[Kpose[m[K.position.x;
+      |                                            [01;31m[K^~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:47:44:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpose[m[K’ in ‘[01m[KrvizClick[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   47 |   odomOld.pose.pose.position.y = rvizClick.[01;31m[Kpose[m[K.position.y;
+      |                                            [01;31m[K^~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:48:47:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpose[m[K’ in ‘[01m[KrvizClick[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   48 |   odomOld.pose.pose.orientation.z = rvizClick.[01;31m[Kpose[m[K.orientation.z;
+      |                                               [01;31m[K^~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:49:3:[m[K [01;31m[Kerror: [m[K‘[01m[KinitialPoseRecieved[m[K’ was not declared in this scope
+   49 |   [01;31m[KinitialPoseRecieved[m[K = true;
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/sebastian/ros_ws/src/localization_data_pub/src/odom_pub.cpp:156:8:[m[K [01;31m[Kerror: [m[K‘[01m[KinitialPoseRecieved[m[K’ was not declared in this scope
+  156 |     if([01;31m[KinitialPoseRecieved[m[K){
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/localization_data_pub.dir/build.make:63: CMakeFiles/localization_data_pub.dir/src/odom_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1726: CMakeFiles/localization_data_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
